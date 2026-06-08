@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get("/app/qudratov_com_26_gmail_com", (req, res) => {
+app.get("/app/qudratov_com26_gmail_com", (req, res) => {
   const rawX = req.query.x;
   const rawY = req.query.y;
 
