@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { sha3_256 } = require("js-sha3");
  
-const [,, filesDir = "./files", EMAIL = "your@email.com"] = process.argv;
+const [,, filesDir = "./files", EMAIL = "qudratov.com26@gmail.com"] = process.argv;
  
 function sortKey(hex) {
   let product = 1n;
