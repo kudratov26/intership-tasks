@@ -17,11 +17,13 @@ app.get("/app/qudratov_com26_gmail_com", (req, res) => {
 });
 
 function lcm(x, y) {
-  return String(x * y / gcd(x, y));
+  const bx = BigInt(x);
+  const by = BigInt(y);
+  return String(bx * by / gcd(bx, by));
 }
 
 function gcd(x, y) {
-  while (y !== 0) {
+  while (y !== 0n) {
     let temp = y;
     y = x % y;
     x = temp;
