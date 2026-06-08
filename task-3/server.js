@@ -9,7 +9,7 @@ app.listen(port, () => {
 app.get("/qudratov_com_26_gmail_com", (req, res) => {
   const rawX = req.query.x;
   const rawY = req.query.y;
-  if (!Number.isInteger(Number(rawX)) || !Number.isInteger(Number(rawY))) {
+  if (!Number.isInteger(Number(rawX)) || !Number.isInteger(Number(rawY)) || Number(rawX) <= 0 || Number(rawY) <= 0) {
     return res.type("text/plain").send("NaN");
   }
   res.type("text/plain").send(lcm(rawX, rawY));
