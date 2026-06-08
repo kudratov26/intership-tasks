@@ -6,7 +6,7 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
-app.get("/qudratov_com_26_gmail_com", (req, res) => {
+app.get("/app/qudratov_com_26_gmail_com", (req, res) => {
   const rawX = req.query.x;
   const rawY = req.query.y;
   if (!Number.isInteger(Number(rawX)) || !Number.isInteger(Number(rawY)) || Number(rawX) <= 0 || Number(rawY) <= 0) {
